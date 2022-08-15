@@ -14,7 +14,7 @@ var searchHistoryContainer = document.querySelector('#history');
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 
-// Function to display the search history list.
+// search history list.
 function renderSearchHistory() {
   searchHistoryContainer.innerHTML = '';
 
@@ -189,8 +189,7 @@ function renderItems(city, data) {
   renderForecast(data.daily, data.timezone);
 }
 
-// Fetches weather data for given location from the Weather Geolocation
-// endpoint; then, calls functions to display current and forecast weather data.
+// Fetches weather data for given location from the Weather Geolocation // endpoint; then, calls functions to display current and forecast weather data.
 function fetchWeather(location) {
   var { lat } = location;
   var { lon } = location;
